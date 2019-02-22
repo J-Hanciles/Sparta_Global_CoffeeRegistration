@@ -1,0 +1,69 @@
+﻿<Window x:Class="WPFCoffeeandTV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCoffeeandTV"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF8C6236">
+        <Label FontSize="18" x:Name="customerName" Content="Customer Name" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <Label FontSize="18" x:Name="coffeeSize" Content="Coffee Size" HorizontalAlignment="Left" Margin="50,85,0,0" VerticalAlignment="Top" Height="30" Width="200" Background="#FF76300E"/>
+        <Label FontSize="18" x:Name="shotType" Content="Shot Type" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <Label FontSize="18" x:Name="milk" Content="Type of Milk" HorizontalAlignment="Left" Margin="50,190,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <Label FontSize="18" Content="Foam" HorizontalAlignment="Left" Margin="50,225,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <Label FontSize="18" x:Name="toppings" Content="Toppings" HorizontalAlignment="Left" Margin="50,260,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <Label FontSize="18" x:Name="flavourings" Content="Flavours" HorizontalAlignment="Left" Margin="50,295,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="#FF76300E"/>
+        <TextBox FontSize="18" x:Name="nameOfCustomer" HorizontalAlignment="Left" Height="30" Margin="280,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <ComboBox x:Name="sizeOfCoffee" HorizontalAlignment="Left" Margin="280,85,0,0" VerticalAlignment="Top" Width="200" Height="30">
+            <ComboBoxItem x:Name="choOption" Content="Choose Your Size" Height="30"></ComboBoxItem>
+            <ComboBoxItem x:Name="shtOption" Content="Short (236ml)" Height="30"></ComboBoxItem>
+            <ComboBoxItem x:Name="talOption" Content="Tall (354ml)" Height="30"></ComboBoxItem>
+            <ComboBoxItem x:Name="grdOption" Content="Grande (473ml)" Height="30"></ComboBoxItem>
+            <ComboBoxItem x:Name="venOption" Content="Venti (591ml)" Height="30"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="typeOfShot" HorizontalAlignment="Left" Margin="280,120,0,0" VerticalAlignment="Top" Width="200" Height="30">
+            <ComboBoxItem x:Name="espOption" Content="Espresso" Height="30"></ComboBoxItem>
+            <ComboBoxItem x:Name="dcfOption" Content="Decaf Espresso" Height="30"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="typeOfMilk" HorizontalAlignment="Left" Margin="280,190,0,0" VerticalAlignment="Top" Width="200" Height="30">
+            <ComboBoxItem x:Name="wantMilk" Content="Choice Of Milk"></ComboBoxItem>
+            <ComboBoxItem x:Name="noneOption" Content="None"></ComboBoxItem>
+            <ComboBoxItem x:Name="semiSkimmedOption" Content="Semi Skimmed"></ComboBoxItem>
+            <ComboBoxItem x:Name="whlMilkOption" Content="Whole Milk"></ComboBoxItem>
+            <ComboBoxItem x:Name="soyaOption" Content="Soya Milk"></ComboBoxItem>
+            <ComboBoxItem x:Name="almondOption" Content="Almond Milk"></ComboBoxItem>
+            <ComboBoxItem x:Name="coconutOption" Content="Coconut Milk"></ComboBoxItem>
+            <ComboBoxItem x:Name="oatMilkOption" Content="Oat Milk"></ComboBoxItem>
+        </ComboBox>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="280,237,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="395,237,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="280,260,0,0" VerticalAlignment="Top" Width="200" Height="30">
+            <ComboBoxItem x:Name="anyTopOption" Content="Any Toppings?"></ComboBoxItem>
+            <ComboBoxItem x:Name="none1Option" Content="None"></ComboBoxItem>
+            <ComboBoxItem x:Name="whpCrmOption" Content="Whipped Cream"></ComboBoxItem>
+            <ComboBoxItem x:Name="dustChocOption" Content="Dusted Chocolate"></ComboBoxItem>
+            <ComboBoxItem x:Name="marshmOption" Content="Marshmallow"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="280,295,0,0" VerticalAlignment="Top" Width="200" Height="30">
+            <ComboBoxItem x:Name="flvOp" Content="Any Flavourings?"></ComboBoxItem>
+            <ComboBoxItem x:Name="alSyOption" Content="Almond Syrup"></ComboBoxItem>
+            <ComboBoxItem x:Name="hazSyOption4" Content="Hazelnut Syrup"></ComboBoxItem>
+            <ComboBoxItem x:Name="hazSySFOption" Content="Hazelnut Syrup (Sugar Free)"></ComboBoxItem>
+            <ComboBoxItem x:Name="vanSyOption" Content="Vanilla Syrup"></ComboBoxItem>
+            <ComboBoxItem x:Name="vanSySFOption" Content="Vanilla Syrup (Sugar Free)"></ComboBoxItem>
+            <ComboBoxItem x:Name="carSyOption" Content="Caramel Syrup"></ComboBoxItem>
+            <ComboBoxItem x:Name="carSypSFOption" Content="Caramel Syrup (Sugar Free)"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="saveOrder" Content="Save Order" HorizontalAlignment="Left" Margin="150,367,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
+        <Button x:Name="viewOrder" Content="View Order" HorizontalAlignment="Left" Margin="280,366,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
+        <RadioButton x:Name="_5ShtOption" Content="5" HorizontalAlignment="Left" Margin="454,155,0,0" VerticalAlignment="Top" Height="30"/>
+        <RadioButton x:Name="_4shtOption" Content="4" HorizontalAlignment="Left" Margin="412,155,0,0" VerticalAlignment="Top" Height="30"/>
+        <RadioButton x:Name="_3ShtOption" Content="3" HorizontalAlignment="Left" Margin="366,155,0,0" VerticalAlignment="Top" Height="30"/>
+        <RadioButton x:Name="_2ShtOption" Content="2" HorizontalAlignment="Left" Margin="322,155,0,0" VerticalAlignment="Top" Height="30"/>
+        <RadioButton x:Name="_1ShtOption" Content="1" HorizontalAlignment="Left" Margin="280,155,0,0" VerticalAlignment="Top" Height="30"/>
+        <Label x:Name="numOfShots" FontSize="18
+               " Content="How Many Shots" HorizontalAlignment="Left" Margin="50,155,0,0" VerticalAlignment="Top" Height="30" Width="200" Background="#FF76300E"/>
+
+    </Grid>
+</Window>
